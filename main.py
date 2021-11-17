@@ -1,6 +1,5 @@
 from webptools import dwebp
 import os, glob
-
 os.chdir("./images")  # working directory
 
 webp_list = []
