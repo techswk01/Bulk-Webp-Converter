@@ -1,6 +1,5 @@
-from webptools import dwebp  # library to convert webp to png
-import glob, os
-import random
+from webptools import dwebp
+import os, glob
 
 os.chdir("./images")  # working directory
 
