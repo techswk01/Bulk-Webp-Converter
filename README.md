@@ -37,3 +37,4 @@ bin_path="libwebp_linux/bin/cwebp"
 os.chdir("./images")  
 
 ```
+Credits to [Daweo](https://stackoverflow.com/users/10785975/daweo) for contribution on bug fixing
