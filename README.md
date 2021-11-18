@@ -47,24 +47,8 @@ bin_path="libwebp_linux/bin/cwebp"
 
 ```
 
-
-
-# dwebp
-
-## Convert webp image to other image format
-
-```python
-
-from webptools import dwebp
-
-# pass input_image(.webp image) path ,output_image(.jpeg,.pnp .....)
-print(dwebp(input_image="python_logo.webp", output_image="python_logo.jpg",
-            option="-o", logging="-v"))
-
-```
-
 ## The script will scan the (./images) folder for webp files. 
-## You can change the image folder to your desired name.
+## You can change the image folder to your desired folder.
 
 os.chdir("./images")  
 
