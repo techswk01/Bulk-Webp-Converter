@@ -1,17 +1,16 @@
-from webptools import dwebp
-import os, glob
+import glob, os
+from webptools import dwebp  # library to convert webp to png
 os.chdir("./images")  # working directory
+# scans directory for webp files
+webp_list = glob.glob("*.webp")
 
-webp_list = []
-for file in glob.glob("*.webp"):
-    webp_list = file
-    print([webp_list])
+#using for loop to go through the files in the list
+for filename in webp_list:
+    # removes the .webp extension and maintain the original filename for output
+    outname = filename[:-4] + "png"
+    dwebp(input_image=filename, output_image=outname, option="-o", logging="-v")
 
-random_number = random.randint(1,100)
-print(random_number)
+#single input single output
+#print(dwebp(input_image=filename, output_image=outname, option="-o", logging="-v"))
 
-for files in webp_list:
-    print(dwebp(input_image=webp_list, output_image="x.png", option="-o", logging="-v"))
 
-# orignal code allows only 1 input and 1 output
-# print(dwebp(input_image="sample.webp", output_image="sample.png", option="-o", logging="-v"))
